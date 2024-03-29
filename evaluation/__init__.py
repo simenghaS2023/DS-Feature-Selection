@@ -1,0 +1,2 @@
+from .multiple_trials import MultipleTrialsEvaluation
+from .single_trial import SingleTrialEvaluation
