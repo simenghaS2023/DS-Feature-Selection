@@ -31,7 +31,9 @@ Execute the following steps from the root of the project directory.
     ```
 
 # Usage
-By default, the application is served on http://localhost:8501. As the application is intended as a server, it is expected to run persistently and can be stopped by pressing `Ctrl+C` in the terminal.
+By default, the application is served [locally](http://localhost:8501). As the application is intended as a server, it is expected to run persistently and can be stopped by pressing `Ctrl+C` in the terminal.
+
+The application is further deployed on the internet on [Streamlit Community Cloud](https://simenghas2023-ds-feature-selection-main-wvfgpd.streamlit.app).
 
 With the default hyperparamaters, each algorithm should take around 1-2 minutes to run. The Genetic algorithm is the slowest, followed by the SKL algorithm and the Simulated Annealing algorithm is the fastest. A progress bar is displayed on the terminal to indicate the progress of the algorithm.
 
