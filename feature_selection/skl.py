@@ -12,4 +12,4 @@ class SKLFeatureSelector(FeatureSelector):
         selector = RFECV(clf, cv=self.cv, scoring='accuracy', n_jobs=-1)
         selector.fit(X, y)
         
-        return X.columns[selector.support_]
+        return X.columns[selector.support_], 0

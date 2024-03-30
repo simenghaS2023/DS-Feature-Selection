@@ -53,7 +53,7 @@ class SimulatedAnnealingFeatureSelector(IterativeFeatureSelector):
                 break
             
             temperature *= self.cooling_rate
-        return X.columns[self.best_individual]
+        return X.columns[self.best_individual], i
             
     def _get_neighbor(self, individual):
         new_individual = individual.copy()
