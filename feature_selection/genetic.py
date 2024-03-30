@@ -52,7 +52,7 @@ class GeneticAlgorithmFeatureSelector(IterativeFeatureSelector):
             
             population = self._evolve(population, fitnesses, self.population_size, self.crossover_rate, self.mutation_rate)
             
-        return X.columns[self.best_individual]
+        return X.columns[self.best_individual], i
         
     def _create_population(self, X):
         population = []
